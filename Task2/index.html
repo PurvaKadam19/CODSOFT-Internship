@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HOME PAGE -->
+    <div id="home">
+        <h1>ONLINE QUIZ</h1>
+        <p>Welcome to the Quiz App</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <h4>Made by Purva Kadam</h4>
+    </div>
+
+    <!-- QUIZ PAGE -->
+    <div id="quiz" class="hide">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- RESULT PAGE -->
+    <div id="result" class="hide">
+        <h1>Quiz Completed 🎉</h1>
+        <h2 id="score"></h2>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
